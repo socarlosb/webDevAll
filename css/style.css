@@ -1,3 +1,12 @@
+body {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	background-color: #5a95cf;
+}
+
+a{
+	color: white;
+}
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
 

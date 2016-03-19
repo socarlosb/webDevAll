@@ -5,6 +5,10 @@
 	<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- add jquery? -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
     <!-- font awesome -->
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
@@ -16,6 +20,11 @@
 
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+	<!-- my local files -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="js/myjs.js"></script>
+
 
 
 </head>
@@ -40,18 +49,36 @@
 				</li>
 				<li>
 					<p>For <a href="http://getbootstrap.com/">Bootstrap</a> add:</p>
-					<pre>
-						<p>!-- Latest compiled and minified CSS --</p>
-						<p>link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"</p>
-						<p>!-- Optional theme --</p>
-						<p>link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous"</p>
-						<p>!-- Latest compiled and minified JavaScript --</p>
+					<pre>!-- Latest compiled and minified CSS --
+						<p>link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"</p>!-- Optional theme --
+						<p>link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous"</p>!-- Latest compiled and minified JavaScript --
 						<p>script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous" /script</p>
 					</pre>
 				</li>
 			</ul>
 		</div>
+		<div class="col-xs-12">
+			<h4>Now let's start with the <strong>real goal</strong> of this page.</h4>
+			<p>So, we need to ask the user some info (search google for 'html input' and you will get cool stuff:</p>
+			
+			<div class="col-xs-10">
+				<input id="userName" type="text" class="form-control" placeholder="Tell me your name"><br>
+			</div>
+			<div class="col-xs-2">
+				<button onclick="changeInput()" type="submit" class="btn btn-info">Ok</button>
+			</div>
+		</div>
+		<div class="col-xs-12">
+			<p>After getting a input(aka textbox), and adding a button, if we search in google for 'html get the value of an input' you will find that this time we need to use javascript.</p>
+			<p>So, we will add an 'onclick' attribute to our button, targeting a function. Then we need to write our javascript function!</p>
+			<p>Note to myself: when I want a value of an input id I need to use <i>document.getElementById</i> and not <i>document.getElementByID</i>. Yep, a letter change alot!</p>
+			<p>So, now with javascript I am changing the value of the input text using the value inputed by the user... I need to go further.</p>
+			<p>How to save the value in an database? This will be my task for the next time, on my next day off... sadly it could be in a week or more!</p>
+		</div>
 	</div>
 </div>
 </body>
+<footer class="footer">
+	<p class="text-center"><small><em>dev by @socarlosb 2016</em></small></p>
+</footer>
 </html>
